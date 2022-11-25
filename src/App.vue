@@ -6,12 +6,18 @@ import { RouterLink, RouterView } from "vue-router";
   <header>
     <div class="wrapper">
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/gallery">Gallery</RouterLink>
-        <RouterLink to="/screenshot">ScreenShot</RouterLink>
-        <RouterLink to="/btool">B-Tool</RouterLink>
-        <RouterLink to="/etc">Etc</RouterLink>
-        <RouterLink to="/clap">Clap</RouterLink>
+        <ul>
+          <li>
+            <RouterLink to="/gallery">Gallery</RouterLink>
+            <ul>
+              <li><RouterLink to="/gallerySub">GallerySub</RouterLink></li>
+            </ul>
+          </li>
+          <li><RouterLink to="/screenshot">ScreenShot</RouterLink></li>
+          <li><RouterLink to="/btool">B-Tool</RouterLink></li>
+          <li><RouterLink to="/etc">Etc</RouterLink></li>
+          <li><RouterLink to="/clap">Clap</RouterLink></li>
+        </ul>
       </nav>
     </div>
   </header>

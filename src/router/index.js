@@ -12,27 +12,32 @@ const router = createRouter({
     {
       path: "/gallery",
       name: "gallery",
-      component: () => import("../views/galleryView.vue"),
+      component: () => import("../views/GalleryView.vue"),
+    },
+    {
+      path: "/gallerySub",
+      name: "gallerySub",
+      component: () => import("../views/GallerySubView.vue"),
     },
     {
       path: "/screenshot",
       name: "screenshot",
-      component: () => import("../views/screenshotView.vue"),
+      component: () => import("../views/ScreenshotView.vue"),
     },
     {
       path: "/btool",
       name: "btool",
-      component: () => import("../views/btoolView.vue"),
+      component: () => import("../views/BtoolView.vue"),
     },
     {
       path: "/etc",
       name: "etc",
-      component: () => import("../views/etcView.vue"),
+      component: () => import("../views/EtcView.vue"),
     },
     {
       path: "/clap",
       name: "clap",
-      component: () => import("../views/clapView.vue"),
+      component: () => import("../views/ClapView.vue"),
     },
     {
       path: "/404",

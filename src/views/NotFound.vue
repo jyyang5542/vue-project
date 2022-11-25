@@ -1,9 +1,7 @@
 <script setup></script>
 
 <template>
-  <main>
-    <h1>Home</h1>
-  </main>
+  <main>Page Not Found</main>
 </template>
 
 <style lang="scss"></style>

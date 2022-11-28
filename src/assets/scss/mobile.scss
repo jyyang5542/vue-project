@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+// PC
+@media screen and (max-width: 550px) {
+  .hatiho {
+    &__header {
+      .wrapper {
+      }
+    }
+    &__logo {
+      a {
+      }
+      img {
+      }
+    }
+    &__gnb {
+    }
+    &__menu {
+      > li > a {
+      }
+    }
+    &__submenu {
+      > li > a {
+      }
+    }
+    &__content {
+    }
+    &__footer {
+      b {
+      }
+    }
+  }
+}

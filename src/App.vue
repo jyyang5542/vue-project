@@ -6,7 +6,9 @@ import { RouterLink, RouterView } from "vue-router";
   <div class="hatiho">
     <header class="hatiho__header">
       <div class="wrapper">
-        <h1 class="hatiho__logo"><RouterLink to="/">HatiHo</RouterLink></h1>
+        <h1 class="hatiho__logo">
+          <RouterLink to="/"><img src="./assets/images/logo.png" alt="HatiHo" /></RouterLink>
+        </h1>
         <nav class="hatiho__gnb">
           <ul class="hatiho__menu">
             <!-- Gallery -->

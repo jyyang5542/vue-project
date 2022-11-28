@@ -21,10 +21,13 @@
       a {
       }
       img {
+        display: block;
+        width: 150px;
+        height: auto;
       }
     }
     &__gnb {
-      width: 800px;
+      width: 640px;
     }
     &__menu {
       position: relative;
@@ -33,18 +36,51 @@
       align-items: flex-start;
 
       > li > a {
+        display: inline-block;
+        line-height: 30px;
+        font-size: 18px;
+        color: rgba(0, 0, 0, 0.6);
+
+        &:hover {
+          color: rgba(0, 0, 0, 0.9);
+        }
       }
     }
     &__submenu {
       position: absolute;
-      > li > a {
+      display: none;
+      margin-top: 5px;
+      padding: 10px 15px;
+      white-space: nowrap;
+      border-radius: 10px;
+      background: rgba(254, 237, 234, 0.9);
+      z-index: 10;
+
+      > li {
+        display: block;
+        line-height: 1.6;
+
+        > a {
+          text-decoration: none;
+          color: rgba(246, 82, 48, 0.8);
+
+          &:hover {
+            color: rgba(246, 82, 48, 1);
+          }
+        }
       }
+    }
+    &__menu > li:hover &__submenu {
+      display: block;
     }
     &__content {
       height: 572px;
     }
     &__footer {
+      padding-top: 20px;
       text-align: center;
+      line-height: 30px;
+      color: rgba(0, 0, 0, 0.6);
 
       b {
         color: $col_red;

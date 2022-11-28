@@ -3,6 +3,7 @@
 // PC
 @media screen and (min-width: 1021px) {
   .hatiho {
+    $hatiho: &;
     position: fixed;
     width: 1020px;
     height: 600px;
@@ -16,62 +17,62 @@
         justify-content: space-between;
         align-items: flex-start;
       }
-    }
-    &__logo {
-      a {
-      }
-      img {
-        display: block;
-        width: 150px;
-        height: auto;
-      }
-    }
-    &__gnb {
-      width: 640px;
-    }
-    &__menu {
-      position: relative;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-
-      > li > a {
-        display: inline-block;
-        line-height: 30px;
-        font-size: 18px;
-        color: rgba(0, 0, 0, 0.6);
-
-        &:hover {
-          color: rgba(0, 0, 0, 0.9);
+      #{$hatiho}__logo {
+        img {
+          display: block;
+          width: 150px;
+          height: auto;
         }
       }
-    }
-    &__submenu {
-      position: absolute;
-      display: none;
-      margin-top: 5px;
-      padding: 10px 15px;
-      white-space: nowrap;
-      border-radius: 10px;
-      background: rgba(254, 237, 234, 0.9);
-      z-index: 10;
+      #{$hatiho}__gnb {
+        width: 640px;
+      }
+      #{$hatiho}__menu {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
 
-      > li {
-        display: block;
-        line-height: 1.6;
+        > li {
+          > a {
+            display: inline-block;
+            line-height: 30px;
+            font-size: 18px;
+            color: rgba(0, 0, 0, 0.6);
 
-        > a {
-          text-decoration: none;
-          color: rgba(246, 82, 48, 0.8);
-
-          &:hover {
-            color: rgba(246, 82, 48, 1);
+            &:hover {
+              color: rgba(0, 0, 0, 0.9);
+            }
+          }
+          &:hover #{$hatiho}__submenu {
+            display: block !important;
           }
         }
       }
-    }
-    &__menu > li:hover &__submenu {
-      display: block;
+      #{$hatiho}__submenu {
+        position: absolute;
+        display: none;
+        margin-top: 5px;
+        padding: 10px 15px;
+        white-space: nowrap;
+        border-radius: 10px;
+        background: rgba(254, 237, 234, 0.9);
+        z-index: 10;
+
+        > li {
+          display: block;
+          line-height: 1.6;
+
+          > a {
+            text-decoration: none;
+            color: rgba(246, 82, 48, 0.8);
+
+            &:hover {
+              color: rgba(246, 82, 48, 1);
+            }
+          }
+        }
+      }
     }
     &__content {
       height: 572px;

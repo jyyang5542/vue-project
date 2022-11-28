@@ -12,6 +12,9 @@
 
     &__header {
       .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
       }
     }
     &__logo {
@@ -21,19 +24,29 @@
       }
     }
     &__gnb {
+      width: 800px;
     }
     &__menu {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+
       > li > a {
       }
     }
     &__submenu {
+      position: absolute;
       > li > a {
       }
     }
     &__content {
     }
     &__footer {
+      text-align: center;
+
       b {
+        color: $col_red;
       }
     }
   }

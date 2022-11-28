@@ -56,4 +56,9 @@ import { RouterLink, RouterView } from "vue-router";
   </div>
 </template>
 
-<style lang="scss"></style>
+<style lang="scss">
+@import "./assets/scss/_var.scss";
+@import "./assets/scss/pc.scss";
+@import "./assets/scss/tablet.scss";
+@import "./assets/scss/mobile.scss";
+</style>

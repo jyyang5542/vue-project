@@ -3,12 +3,16 @@ import HomeView from "../views/HomeView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
+  scrollBehavior: () => ({ y: 0 }),
   routes: [
     // 메인 화면
     {
       path: "/",
       name: "home",
       component: HomeView,
+      meta: {
+        title: "HatiHo",
+      },
     },
     // 갤러리
     {
